@@ -77,13 +77,13 @@ from sklearn.preprocessing import LabelEncoder
 data['Target'].max()
 
 y = tf.keras.utils.to_categorical(data['Target'], num_classes=21)
-tok = tf.keras.preprocessing.text.Tokenizer(num_words=40000)
+tok = tf.keras.preprocessing.text.Tokenizer()
 tok.fit_on_texts(data['Sentences'])
 x = tok.texts_to_sequences(data['Sentences'])
 
 vocab = len(tok.word_index) + 1
 
-pad = tf.keras.preprocessing.sequence.pad_sequences(x,maxlen=(120))
+pad = tf.keras.preprocessing.sequence.pad_sequences(x,maxlen=(100))
 
 
 
