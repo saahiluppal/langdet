@@ -4,8 +4,8 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-tokenizer_path = 'tokenizer_one.json'
-model_path = 'model_one.h5'
+tokenizer_path = 'tokenizer_two.json'
+model_path = 'model_two.h5'
 
 with open(tokenizer_path,'rb') as handle:
     tokenizer = pickle.load(handle)
@@ -32,7 +32,7 @@ if len(text) == 0:
     exit()
     
 text = tokenizer.texts_to_sequences([text])
-text = tf.keras.preprocessing.sequence.pad_sequences(text, maxlen=120)
+text = tf.keras.preprocessing.sequence.pad_sequences(text, maxlen=100)
 
 num = model.predict_classes(text)[0]
 
