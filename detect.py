@@ -1,6 +1,7 @@
 import tensorflow as tf
 import pickle
 import warnings
+import sys
 
 warnings.filterwarnings('ignore')
 
@@ -25,8 +26,12 @@ languages = {
 }
 
 model = tf.keras.models.load_model(model_path)
-
-text = input('\nEnter Language You Want to Detect: (Enter at least 5 words So the model can predict Accurately)\n:').strip()
+if len(sys.argv) > 1:
+    file_path = sys.argv[1]
+    with open(file_path) as handle:
+        text = handle.read()
+else:
+    text = input('\nEnter Language You Want to Detect: (Enter at least 5 words So the model can predict Accurately)\n:').strip().lower()
 if len(text) == 0:
     print('Can you please write Something')
     exit()
