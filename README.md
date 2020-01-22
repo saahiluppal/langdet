@@ -52,7 +52,9 @@ https://www.nvidia.com/Download/index.aspx
 <br />
 <a href='https://github.com/saahiluppal/langdet/blob/master/tokenizer_one.json'>Tokenizer</a>&emsp;(For Model One)
 <br /><br />
-<a href='#'>Model_two</a>&emsp;(Uploading Shortly)
+<a href='https://github.com/saahiluppal/langdet/blob/master/model_two.h5'>Model_two</a>&emsp;(Almost 99.72% accuracy)
+<br />
+<a href='https://github.com/saahiluppal/langdet/blob/master/tokenizer_two.json'>Tokenizer</a>&emsp;(For Model Two)
 
 NOTE: Models requires their respective tokenizers to work with; SO kindly download models along with their tokenizers
 #### Or hit wget on terminal (linux)
@@ -61,7 +63,14 @@ NOTE: Models requires their respective tokenizers to work with; SO kindly downlo
 wget https://github.com/saahiluppal/langdet/blob/master/model_one.h5
 # Tokenizer_one
 wget https://github.com/saahiluppal/langdet/blob/master/tokenizer_one.json
+
+# Model_two
+wget https://github.com/saahiluppal/langdet/blob/master/model_two.h5
+# Tokenizer_two
+wget https://github.com/saahiluppal/langdet/blob/master/tokenizer_two.json
 ```
+Not sure which model to use, You can find information about models <a href='https://github.com/saahiluppal/langdet/blob/master/model_history'>here</a>
+
 ## Action
 ```bash
 # wanna detect language (we recommend using more than 5 words for better accuracy)
@@ -78,6 +87,8 @@ extraction.py
 ```
 ### Dataset Used
 I used Dataset from European Parliament Parallel Corpus,which can be found <a href='http://www.statmt.org/europarl/'>here</a>
+<br />
+While full dataset is large (1.5 GB Unextracted) you might want to use smaller preprocessed dataset can be found <a href='https://github.com/saahiluppal/langdet/tree/master/dataset'>here</a> 
 
 ### LICENSE
 <a href='https://github.com/saahiluppal/langdet/blob/master/LICENSE'>Apache License 2.0</a>
