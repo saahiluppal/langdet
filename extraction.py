@@ -1,6 +1,6 @@
 import os
 
-org_path = './europarl/txt'
+org_path = './dataset/txt'
 des_path = './dataset'
 print('Default writting directory:', des_path)
 
@@ -40,14 +40,14 @@ default_char_length = 10_000_000
 print('Warning: Default Char Length set on', default_char_length)
 
 for code, lang in language.items():
-    from_path = org_path + '/' + code 
-    to_path = des_path + '/' + lang + '.txt'
+    from_path = os.path.join(org_path, code)
+    to_path = os.path.join(des_path, lang + '.txt')
     dirs = os.listdir(from_path)
     
     template = ''
     
     for file in dirs:
-        path = from_path + '/' + file
+        path = os.path.join(from_path, file)
         with open(path) as handle:
             output = handle.read()
         template += output
