@@ -29,22 +29,10 @@ This repo provides clean implementation of Language Detection System in TensorFl
 ```bash
 # Tensorflow CPU
 conda activate (import tensorflow as tf)
-
-# Tensorflow GPU
-conda activate (import tensorflow-gpu as tf)
 ```
 ### pip
 ```bash
 pip install -r requirements.txt
-```
-### Nvidia Driver (For GPU)
-
-```bash
-# Ubuntu 18.04
-sudo apt-add-repository -r ppa:graphics-drivers/ppa
-sudo apt install nvidia-driver-430
-# Windows/Other
-https://www.nvidia.com/Download/index.aspx
 ```
 
 ### Downloading pre-trained weights
