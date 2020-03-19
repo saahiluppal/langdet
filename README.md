@@ -36,26 +36,17 @@ pip install -r requirements.txt
 ```
 
 ### Downloading pre-trained weights
-<a href='https://github.com/saahiluppal/langdet/blob/master/model_one.h5'>Model_one</a>&emsp;(Almost 97.04% accuracy)
+<a href='https://github.com/saahiluppal/langdet/blob/master/model_two.h5'>Model_two</a>&emsp;
 <br />
-<a href='https://github.com/saahiluppal/langdet/blob/master/tokenizer_one.json'>Tokenizer</a>&emsp;(For Model One)
-<br /><br />
-<a href='https://github.com/saahiluppal/langdet/blob/master/model_two.h5'>Model_two</a>&emsp;(Almost 99.72% accuracy)
-<br />
-<a href='https://github.com/saahiluppal/langdet/blob/master/tokenizer_two.json'>Tokenizer</a>&emsp;(For Model Two)
+<a href='https://github.com/saahiluppal/langdet/blob/master/tokenizer_two.json'>Tokenizer</a>&emsp;
 
 NOTE: Models requires their respective tokenizers to work with; SO kindly download models along with their tokenizers
 #### Or hit wget on terminal (linux)
 ```bash
-# Model_one
-wget https://github.com/saahiluppal/langdet/blob/master/model_one.h5
-# Tokenizer_one
-wget https://github.com/saahiluppal/langdet/blob/master/tokenizer_one.json
-
-# Model_two
-wget https://github.com/saahiluppal/langdet/blob/master/model_two.h5
-# Tokenizer_two
-wget https://github.com/saahiluppal/langdet/blob/master/tokenizer_two.json
+# Model
+wget https://github.com/saahiluppal/langdet/blob/master/model.h5
+# Tokenizer
+wget https://github.com/saahiluppal/langdet/blob/master/tokenizer.json
 ```
 Not sure which model to use, You can find information about models <a href='https://github.com/saahiluppal/langdet/blob/master/model_history'>here</a>
 
@@ -76,7 +67,7 @@ extraction.py
 ### Dataset Used
 I used Dataset from European Parliament Parallel Corpus,which can be found <a href='http://www.statmt.org/europarl/'>here</a>
 <br />
-While full dataset is large (1.5 GB Unextracted) you might want to use smaller preprocessed dataset can be found <a href='https://github.com/saahiluppal/langdet/tree/master/dataset'>here</a> 
+While full dataset is large (1.5 GB Unextracted) you might want to use smaller preprocessed dataset can be found <a href='https://github.com/saahiluppal/langdet/blob/master/dataset.zip'>here</a> 
 
 ### LICENSE
 <a href='https://github.com/saahiluppal/langdet/blob/master/LICENSE'>Apache License 2.0</a>
