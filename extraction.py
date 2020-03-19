@@ -1,6 +1,6 @@
 import os
 
-org_path = './dataset/txt'
+org_path = './europarl/txt'
 des_path = './dataset'
 print('Default writting directory:', des_path)
 
@@ -26,7 +26,7 @@ language = {
     'ro': 'romanian',
     'de': 'german',
     'es': 'spanish',
-    'nl': 'Dutch',
+    'nl': 'dutch',
     'cs': 'czech',
     'sv': 'swedish',
     'et': 'estonian',
@@ -36,7 +36,7 @@ language = {
     'fr': 'french'
 }
 
-default_char_length = 10_000_000
+default_char_length = 100_000
 print('Warning: Default Char Length set on', default_char_length)
 
 for code, lang in language.items():
